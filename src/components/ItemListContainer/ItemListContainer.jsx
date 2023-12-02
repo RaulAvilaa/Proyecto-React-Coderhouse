@@ -1,10 +1,10 @@
 import { data } from '../../data';
+import PropTypes from 'prop-types';
 
-export const ProductList = () => {
-
+export const ItemListContainer = (props) => {
     return (
         <>
-            <h1 className='text-3xl font-bold text-center my-8 mb-8'>Productos</h1>
+            <h1 className='text-3xl font-bold text-center my-8 mb-8'>{props.greeting}</h1>
             <div className='container-items flex flex-col md:flex-row items-center justify-center my-8 gap-5'>
                 {data.map(product => (
                     <div className='item bg-gray-100 p-4 rounded-md flex flex-col items-center' key={product.id}>
@@ -21,7 +21,10 @@ export const ProductList = () => {
                 ))}
             </div>
         </>
-    )
+    );
 }
+ItemListContainer.propTypes = {
+    greeting: PropTypes.string.isRequired,
+};
 
-export default ProductList
+export default ItemListContainer

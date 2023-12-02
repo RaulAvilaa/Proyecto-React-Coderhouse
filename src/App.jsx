@@ -1,14 +1,15 @@
 import './App.css'
 import Navbar from "./components/Navbar/Navbar";
-import ProductList from './components/ProductList/ProductList';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function App() {
+  const greetingMessage = 'Bienvenido a mi tienda';
 
   return (
     <>
       <Navbar />
-      <ProductList />
+      <ItemListContainer greeting={greetingMessage} />
     </>
-  )
+  );
 }
 export default App
