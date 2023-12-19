@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Button from '../Utils/Button';
+import Button from '../../Utils/Button';
 
 const ItemCard = ({ item }) => {
     return (

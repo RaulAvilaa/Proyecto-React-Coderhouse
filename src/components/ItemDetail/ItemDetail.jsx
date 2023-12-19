@@ -1,4 +1,4 @@
-import Button from "../Utils/Button";
+import Button from "../../Utils/Button";
 
 
 const ItemDetail = ({ item }) => {
