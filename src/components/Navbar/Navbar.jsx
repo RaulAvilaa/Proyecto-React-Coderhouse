@@ -1,31 +1,24 @@
-import logo from '../../assets/logo-no-background.svg'
-import NavLink from './NavLink'
+import { Link } from 'react-router-dom';
+import logo from '../../assets/logo-no-background.svg';
 import CartWidget from './CartWidget';
 
 const Navbar = () => {
     return (
         <header className="bg-blue-900">
             <div className="container mx-auto py-3 flex items-center justify-between">
-                {/* Logo a la izquierda */}
                 <div className="flex-shrink-0">
-                    <img src={logo} alt="Logo" className="h-auto" />
+                    <Link to="/" className="brand-link"><img src={logo} alt="Logo" className="h-auto" /></Link>
                 </div>
-
-                {/* NavLink en el centro */}
                 <nav className="flex-grow flex justify-center space-x-4">
-                    <NavLink href={"#"} text={"Equipos armados"} />
-                    <NavLink href={"#"} text={"Monitores"} />
-                    <NavLink href={"#"} text={"Periféricos"} />
-                    <NavLink href={"#"} text={"Contacto"} />
+                    <Link className="text-white hover:text-orange-600 text-lg uppercase font-semibold" to="/productos/Equipos Armados">Equipos Armados</Link>
+                    <Link className="text-white hover:text-orange-600 text-lg uppercase font-semibold" to="/productos/Monitores">Monitores</Link>
+                    <Link className="text-white hover:text-orange-600 text-lg uppercase font-semibold" to="/productos/Periféricos">Periféricos</Link>
+                    <Link className="text-white hover:text-orange-600 text-lg uppercase font-semibold" to="/productos/Contacto">Contacto</Link>
                 </nav>
-
-                {/* CartWidget a la derecha */}
-                <div className="flex-shrink-0">
-                    <CartWidget />
-                </div>
+                <CartWidget className="flex-shrink-0" />
             </div>
         </header>
-    );
-};
+    )
+}
 
 export default Navbar
