@@ -21,7 +21,8 @@ export const data = [
         name: 'Pc Gamer Intel',
         price: 925,
         img: pc1,
-        category:'Equipos Armados',
+        category: 'Equipos Armados',
+        stock: '10',
         description: 'Intel Core I5 13400f Pro Gamer - 16Gb DDR5 - SSD - Geforce GTX 1650',
     },
     {
@@ -29,7 +30,8 @@ export const data = [
         name: 'Pc Gamer Ryzen',
         price: 1100,
         img: pc2,
-        category:'Equipos Armados',
+        category: 'Equipos Armados',
+        stock: '10',
         description: 'AMD Ryzen 5 7600 Full Gamer - 16gb DDR5 - SSD - RTX3050',
     },
     {
@@ -37,7 +39,8 @@ export const data = [
         name: 'Pc Gamer Ryzen AMD',
         price: 650,
         img: pc3,
-        category:'Equipos Armados',
+        category: 'Equipos Armados',
+        stock: '10',
         description: 'AMD Ryzen 5 4500 Pro Gamer - SSD - 16Gb - Radeon RX5500XT 4Gb',
     },
     {
@@ -45,7 +48,8 @@ export const data = [
         name: 'Mouse Hyperx',
         price: 100,
         img: mouse1,
-        category:'Periféricos',
+        category: 'Periféricos',
+        stock: '10',
         description: 'Hyperx Pulsefire Haste II Black Inalambrico',
     },
     {
@@ -53,7 +57,8 @@ export const data = [
         name: 'Mouse Logitech',
         price: 25,
         img: mouse2,
-        category:'Periféricos',
+        category: 'Periféricos',
+        stock: '10',
         description: 'Logitech PRO HERO Cableado',
     },
     {
@@ -61,7 +66,8 @@ export const data = [
         name: 'Mouse Hyperx',
         price: 52,
         img: mouse3,
-        category:'Periféricos',
+        category: 'Periféricos',
+        stock: '10',
         description: 'Hyperx Gaming RGB Cableado',
     },
     {
@@ -69,7 +75,8 @@ export const data = [
         name: 'Monitor Viewsonic',
         price: 225,
         img: monitor1,
-        category:'Monitores',
+        category: 'Monitores',
+        stock: '10',
         description: 'Viewsonic VX2418-P-MHD 24″ 165Hz',
     },
     {
@@ -77,7 +84,8 @@ export const data = [
         name: 'Monitor Acer',
         price: 300,
         img: monitor2,
-        category:'Monitores',
+        category: 'Monitores',
+        stock: '10',
         description: 'Acer Vg270 27″ IPS 165hz',
     },
     {
@@ -85,7 +93,8 @@ export const data = [
         name: 'Monitor Hikvision',
         price: 129,
         img: monitor3,
-        category:'Monitores',
+        category: 'Monitores',
+        stock: '10',
         description: 'Hikvision 23,5″ DS-D5024FN Full HD VGA HDMI',
     },
     {
@@ -93,7 +102,8 @@ export const data = [
         name: 'Teclado Logitech',
         price: 250,
         img: teclado1,
-        category:'Periféricos',
+        category: 'Periféricos',
+        stock: '10',
         description: 'Logitech G Pro X Gaming TKL inalámbrico negro Cableado',
     },
     {
@@ -101,7 +111,8 @@ export const data = [
         name: 'Teclado Redragon',
         price: 28,
         img: teclado2,
-        category:'Periféricos',
+        category: 'Periféricos',
+        stock: '10',
         description: 'Redragon Dyaus 2 Híbrido Retroiluminado Cableado',
     },
     {
@@ -109,7 +120,7 @@ export const data = [
         name: 'Teclado Logitech',
         price: 49,
         img: teclado3,
-        category:'Periféricos',
+        category: 'Periféricos',
         description: 'Logitech G213 Prodigy Cableado',
     },
     {
@@ -117,7 +128,7 @@ export const data = [
         name: 'Auriculares HyperX Cloud Flight',
         price: 137,
         img: auriculares1,
-        category:'Periféricos',
+        category: 'Periféricos',
         description: 'HyperX Cloud Flight Inalámbricos',
     },
     {
@@ -125,7 +136,8 @@ export const data = [
         name: 'Auriculares HyperX Cloud',
         price: 145,
         img: auriculares2,
-        category:'Periféricos',
+        category: 'Periféricos',
+        stock: '10',
         description: 'HyperX Cloud Alpha S Blue Inalámbricos',
     },
     {
@@ -133,11 +145,8 @@ export const data = [
         name: 'Auriculares Razer',
         price: 115,
         img: auriculares3,
-        category:'Periféricos',
+        category: 'Periféricos',
+        stock: '10',
         description: 'Razer Barracuda X Inalámbricos',
     },
 ];
-
-// export const getProductById = (itemId) => {
-//     return data.find((product) => product.id === itemId);
-// };
