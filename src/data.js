@@ -22,7 +22,7 @@ export const data = [
         price: 925,
         img: pc1,
         category: 'Equipos Armados',
-        stock: '10',
+        stock: '15',
         description: 'Intel Core I5 13400f Pro Gamer - 16Gb DDR5 - SSD - Geforce GTX 1650',
     },
     {
@@ -58,7 +58,7 @@ export const data = [
         price: 25,
         img: mouse2,
         category: 'Periféricos',
-        stock: '10',
+        stock: '20',
         description: 'Logitech PRO HERO Cableado',
     },
     {
@@ -67,7 +67,7 @@ export const data = [
         price: 52,
         img: mouse3,
         category: 'Periféricos',
-        stock: '10',
+        stock: '15',
         description: 'Hyperx Gaming RGB Cableado',
     },
     {
@@ -85,7 +85,7 @@ export const data = [
         price: 300,
         img: monitor2,
         category: 'Monitores',
-        stock: '10',
+        stock: '15',
         description: 'Acer Vg270 27″ IPS 165hz',
     },
     {
@@ -103,8 +103,8 @@ export const data = [
         price: 250,
         img: teclado1,
         category: 'Periféricos',
-        stock: '10',
-        description: 'Logitech G Pro X Gaming TKL inalámbrico negro Cableado',
+        stock: '15',
+        description: 'Logitech G Pro X Gaming TKL inalámbrico negro Cableado con luces RGB',
     },
     {
         id: 11,
@@ -113,7 +113,7 @@ export const data = [
         img: teclado2,
         category: 'Periféricos',
         stock: '10',
-        description: 'Redragon Dyaus 2 Híbrido Retroiluminado Cableado',
+        description: 'Redragon Dyaus 2 Híbrido Retroiluminado Cableado con luces RGB',
     },
     {
         id: 12,
@@ -121,7 +121,8 @@ export const data = [
         price: 49,
         img: teclado3,
         category: 'Periféricos',
-        description: 'Logitech G213 Prodigy Cableado',
+        stock:'12',
+        description: 'Logitech G213 Prodigy Cableado con luces RGB',
     },
     {
         id: 13,
@@ -129,6 +130,7 @@ export const data = [
         price: 137,
         img: auriculares1,
         category: 'Periféricos',
+        stock:'15',
         description: 'HyperX Cloud Flight Inalámbricos',
     },
     {
@@ -137,7 +139,7 @@ export const data = [
         price: 145,
         img: auriculares2,
         category: 'Periféricos',
-        stock: '10',
+        stock: '15',
         description: 'HyperX Cloud Alpha S Blue Inalámbricos',
     },
     {

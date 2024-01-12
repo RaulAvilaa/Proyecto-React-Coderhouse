@@ -9,10 +9,11 @@ const CartWidget = () => {
     const { itemsInCart } = useContext(CartContext)
 
     return (
-        <Link to="/cart" className="flex items-cene gap-1">
+        <Link to="/cart" className={`${itemsInCart() === 0 ? 'invisible opacity-0' : 'visible opacity-100'} transition-all flex items-center gap-1 cursor-pointer`}>
             <FontAwesomeIcon icon={faShoppingCart} className="fa-cart-shopping" style={{ color: 'white' }} />
-            <span className='text-white text-2x1'>{ itemsInCart() }</span>
+            <span className='text-white text-2x1'>{itemsInCart()}</span>
         </Link>
+
     )
 };
 
