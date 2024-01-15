@@ -3,6 +3,7 @@ import { CartContext } from "../../context/CartContext"
 import Button from "../../Utils/Button"
 import trashIcon from '../../assets/trash.svg'
 import EmptyCart from "./EmptyCart"
+import { Link } from "react-router-dom"
 
 
 
@@ -35,6 +36,8 @@ const CartView = () => {
 
             <h4 className="text-4xl font-semibold mt-8">TOTAL: ${totalCart()}</h4>
             <Button onClick={clearCart}>Vaciar carrito</Button>
+            <Button><Link to="/checkout">Finalizar compra</Link></Button>
+
         </section >
     );
 };

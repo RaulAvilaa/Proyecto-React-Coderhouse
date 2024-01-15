@@ -1,8 +1,13 @@
-import { Link } from 'react-router-dom';
 import logo from '../../assets/logo-no-background.svg';
+import { Link } from 'react-router-dom';
 import CartWidget from './CartWidget';
+import { useContext } from 'react';
+import { UserContext } from '../../context/UserContext';
+import Button from '../../Utils/Button';
 
 const Navbar = () => {
+    const { user, logout } = useContext(UserContext)
+
     return (
         <header className="bg-blue-900">
             <div className="container mx-auto py-3 flex items-center justify-between">
@@ -17,8 +22,18 @@ const Navbar = () => {
                 </nav>
                 <CartWidget className="flex-shrink-0" />
             </div>
+
+            {user.logged && (
+                <div className="flex items-center justify-end container mx-auto mt-4">
+                    <p className="text-white mr-3">{user.email}</p>
+                    <Button onClick={logout} className="bg-orange-600 text-white px-4 py-1 rounded">
+                        Cerrar sesión
+                    </Button>
+                </div>
+            )}
         </header>
-    )
-}
+    );
+};
+
 
 export default Navbar

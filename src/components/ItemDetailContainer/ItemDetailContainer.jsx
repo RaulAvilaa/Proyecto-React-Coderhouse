@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import pedirProductos from '../../pedirProductos';
 import ItemDetail from "../ItemDetail/ItemDetail";
 import Loading from '../Loading/Loading';
+import { db } from "../../firebase/config";
+import { doc, getDoc } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
     const [loading, setLoading] = useState(true);
@@ -13,31 +14,26 @@ const ItemDetailContainer = () => {
     useEffect(() => {
         setLoading(true);
 
-        const fetchData = async () => {
-            try {
-                const data = await pedirProductos();
-                const selectedProduct = data.find(prod => prod.id === parseInt(itemId));
+        // 1- armar la referencia
+        const docRef = doc(db, 'productos', itemId)
+        // 2- Llamar a la ref
+        getDoc(docRef)
+            .then((docSnapshot) => {
+                const doc = {
+                    ...docSnapshot.data(),
+                    id: docSnapshot.id
+                }
 
-                if (selectedProduct) { setItem(selectedProduct) }
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            } finally {
-                setLoading(false);
-            }
-        };
+                setItem(doc)
+            })
+            .finally(() => setLoading(false))
 
-        fetchData();
-
-        // // Limpia la suscripción al desmontar el componente
-        return () => {
-            // Cancela operaciones asíncronas pendientes aquí si es necesario
-        };
     }, [itemId]);
 
     return (
         <>
             {loading ? (
-                    <Loading />
+                <Loading />
             ) : (
                 <ItemDetail item={item} />
             )}
