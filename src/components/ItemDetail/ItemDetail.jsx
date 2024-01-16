@@ -35,7 +35,7 @@ const ItemDetail = ({ item }) => {
                 <img className='w-72 max-h-72 object-cover rounded-md mb-4' src={item.img} alt={item.name} />
 
                 <div className="flex flex-col items-center justify-center">
-                    <p className="font-semibold p-4">{item.description}</p>
+                    <p className="font-semibold p-4 ml-10">{item.description}</p>
                     <p className="text-xl font-bold">Precio: ${item.price}</p>
 
                     {

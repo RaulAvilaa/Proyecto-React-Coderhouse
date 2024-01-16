@@ -26,7 +26,7 @@ const LoginScreen = () => {
     return (
         <div className="login-container">
             <div className="p-8 rounded bg-white">
-                <h2 className="text-2xl font-semibold w-80">Login</h2>
+                <h2 className="text-2xl font-semibold w-80">Iniciar Sesión</h2>
                 <hr />
 
                 <form onSubmit={handleSubmit} className="flex flex-col gap-3 mt-4">
@@ -41,7 +41,7 @@ const LoginScreen = () => {
                     <input
                         className="border p-2"
                         type="password"
-                        placeholder="Password"
+                        placeholder="Contraseña"
                         value={values.password}
                         onChange={handleInputChange}
                         name="password"
@@ -55,16 +55,12 @@ const LoginScreen = () => {
                 <button
                     onClick={googleLogin}
                     className="bg-orange-500 text-white rounded p-2 mt-4"
-                >
-                    Iniciar sesión con Google
-                </button>
+                >Iniciar sesión con Google</button>
                 <br />
                 <button
                     onClick={() => register(values)}
                     className="bg-orange-500 text-white rounded p-2 mt-4"
-                >
-                    Registrarse
-                </button>
+                >Registrarse</button>
                 <br />
             </div>
         </div>

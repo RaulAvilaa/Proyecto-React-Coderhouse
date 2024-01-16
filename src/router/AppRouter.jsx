@@ -8,6 +8,7 @@ import ItemDetailContainer from "../components/ItemDetailContainer/ItemDetailCon
 import CartView from "../components/CartView/CartView"
 import Checkout from "../components/Checkout/Checkout"
 import LoginScreen from "../components/LoginScreen/LoginScreen"
+import Contacto from "../components/Contacto/Contacto"
 
 
 const AppRouter = () => {
@@ -27,6 +28,7 @@ const AppRouter = () => {
                                 <Route path="/item/:itemId" element={<ItemDetailContainer />} />
                                 <Route path="/cart" element={<CartView />} />
                                 <Route path="/checkout" element={<Checkout />} />
+                                <Route path="/productos/Contacto" element={<Contacto />} />
 
 
                                 <Route path="*" element={<Navigate to={"/"} />} />
